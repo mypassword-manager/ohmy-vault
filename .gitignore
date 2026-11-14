@@ -1,0 +1,30 @@
+# Rust build output
+/target
+
+# Trunk build output
+/dist
+/.trunk
+
+# Node (Cloudflare Worker)
+node_modules/
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!config.example.env
+*.pem
+*.key
+
+# Exported vault backups must never be committed
+vault-backup*.json
+*.vault-backup.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
